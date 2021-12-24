@@ -27,7 +27,7 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
 
   my-app:
-    image: fashion-mnist-pubsub:version1
+    image: sathyarrr/fashion-mnist-pubsub:latest
     container_name: my-app
     hostname: my-app
     volumes:
