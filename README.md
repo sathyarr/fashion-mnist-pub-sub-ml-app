@@ -7,7 +7,7 @@ A Publisher Subscriber based ML application predicting fashion-mnist images thro
 
 **Everything else:**
 
-The following containers are pulled automatically in Step 2 below:
+The following containers are pulled automatically in [Step 2](https://github.com/sathyarr/fashion-mnist-pub-sub-ml-app/blob/main/README.md#how-to-run) below:
 
 - confluentinc/cp-kafka _(kafka cluster)_
 - confluentinc/cp-zookeeper _(dependency of above image)_
@@ -62,9 +62,9 @@ nohup python3 -u subscriber.py \
 
   *At this stage, `jobs -l` should say 4 jobs are Running.
 
-**Step 3:** Use the tools in Part 1 below to give inputs
+**Step 3:** Use the tools in [Part 1](https://github.com/sathyarr/fashion-mnist-pub-sub-ml-app/blob/main/README.md#part-1) below to give inputs
 
-By default, GooglePubSub broker is configured to run. It can be changed to ApacheKafka with `ML_APP_BROKER` environment variable. _Ref:_ How it Works?
+By default, GooglePubSub broker is configured to run. It can be changed to ApacheKafka with `ML_APP_BROKER` environment variable. _Ref:_ [How it Works?](https://github.com/sathyarr/fashion-mnist-pub-sub-ml-app/blob/main/README.md#how-it-works)
 
 ---
 ## How is it structured?
@@ -126,7 +126,7 @@ _(Both are On-premise applications and don’t interact with Cloud)_
  
  ![Architecture Diagram](docs/Architecture.png)
 
-The model from Part 1 and the library from Part 2 are used to build a Machine Learning application.
+The model from [Part 1](https://github.com/sathyarr/fashion-mnist-pub-sub-ml-app/blob/main/README.md#part-1) and the library from [Part 2](https://github.com/sathyarr/fashion-mnist-pub-sub-ml-app/blob/main/README.md#part-2) are used to build a Machine Learning application.
 
 #### How it Works?
 **initialize_broker.py**
