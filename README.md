@@ -115,6 +115,7 @@ _(Both are On-premise applications and don’t interact with Cloud)_
 
 #### Unified API:
  
+ ![Broker Class Diagram](docs/Broker-Class-Diagram.png)
 
 -	GooglePubSub and ApacheKafka inherits a common abstraction
 -	Both are interchanged seamlessly in the application layer
@@ -123,6 +124,7 @@ _(Both are On-premise applications and don’t interact with Cloud)_
 
 ### Part 3:
  
+ ![Architecture Diagram](docs/Architecture.png)
 
 The model from Part 1 and the library from Part 2 are used to build a Machine Learning application.
 
