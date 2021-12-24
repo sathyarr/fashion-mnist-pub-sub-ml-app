@@ -45,6 +45,9 @@ Start the GooglePubSub emulator in background:
 
 `nohup gcloud beta emulators pubsub start --project=meow &`
 
+Initialize the brokers:
+
+`python3 -u initialize_broker.py`
 
 Start the Publisher in background:
 ```
@@ -65,6 +68,8 @@ nohup python3 -u subscriber.py \
 **Step 3:** Use the tools in [Part 1](https://github.com/sathyarr/fashion-mnist-pub-sub-ml-app/blob/main/README.md#part-1) below to give inputs
 
 By default, GooglePubSub broker is configured to run. It can be changed to ApacheKafka with `ML_APP_BROKER` environment variable. _Ref:_ [How it Works?](https://github.com/sathyarr/fashion-mnist-pub-sub-ml-app/blob/main/README.md#how-it-works)
+
+The running publisher and subscriber should be killed(`kill %[Job ID]`) before updating the environment variable and are restarted
 
 ---
 ## How is it structured?
